@@ -1,0 +1,19 @@
+<div>
+<div class="row">
+  <div  *ngFor="let item of post" class="col">
+        <div class="card " >
+<img class="card-img-top" [src]="item.PostedImage" alt="Card image cap">
+<div class="card-body">
+ <h5 class="card-title">{{item.PostName}}</h5>
+ <p class="card-text">{{item.PostDescription}}</p>
+ <p class="text-muted">{{item.PostedDate}}</p>
+ <button class="btn btn-primary w-100" (click)="liked(item.key)">like</button>
+</div>
+</div>
+  </div>
+</div>
+
+</div>
+
+
+
